@@ -1,7 +1,7 @@
-# Meta-SelfLearning
+## Meta-SelfLearning
 Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark
 
-# Data Prepare
+## Data Prepare
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
 python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
@@ -24,12 +24,12 @@ imgs/000000002.png kills
 imgs/000000003.png A
 ```
 
-# Requirements
+## Requirements
 * Python == 3.7
 * Pytorch == 1.7.0
 * torchvision == 0.8.1
 
-# Argument
+## Argument
 * `--train_data`: folder path to training lmdb dataset.
 * `--valid_data`: folder path to validation lmdb dataset.
 * `--select_data`: select training data, examples are shown below
@@ -42,8 +42,8 @@ imgs/000000003.png A
 * 
 
 
-# Get started
-### To train the baseline model for synthetic domain.
+## Get started
+#### To train the baseline model for synthetic domain.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python train.py \
     --train_data data/train/ \
@@ -55,7 +55,7 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python train.py \
     --batch_size 96 --valInterval 5000
 ```
 
-### To train the meta_train model for synthetic domain using the pretrained model.
+#### To train the meta_train model for synthetic domain using the pretrained model.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_train.py 
     --train_data data/train/ \ 
@@ -69,7 +69,7 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_train.py
     --saved_model saved_models/pretrained.pth 
 ```
 
-### To train the pseudo-label model for synthetic domain.
+#### To train the pseudo-label model for synthetic domain.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python self_training.py 
     --train_data data/train \
@@ -84,7 +84,7 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python self_training.py
     --pseudo_dataset_num 50000 --valInterval 5000 \ 
     --saved_model saved_models/pretrained.pth 
 ```
-### To train the meta self-learning model for synthetic domain.
+#### To train the meta self-learning model for synthetic domain.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_self_learning.py 
     --train_data data/train \
@@ -99,3 +99,5 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_self_learning.py
     --pseudo_dataset_num 50000 --valInterval 5000 --inner_loop 1 \
     --saved_model pretrained_model/pretrained.pth 
 ```
+## Contact
+* email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
