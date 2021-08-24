@@ -3,7 +3,11 @@ Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark
 
 [Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://)
 
+
+
 ## Data Prepare
+- Download the dataset at [Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
+
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
 python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
@@ -31,6 +35,9 @@ imgs/000000003.png A
 * Pytorch == 1.7.0
 * torchvision == 0.8.1
 
+- Linux or OSX
+- NVIDIA GPU + CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
+
 ## Argument
 * `--train_data`: folder path to training lmdb dataset.
 * `--valid_data`: folder path to validation lmdb dataset.
@@ -43,8 +50,19 @@ imgs/000000003.png A
 * `--saved_model`: path to a pretrained model.
 * 
 
-
 ## Get started
+- Install torch and dependencies from https://github.com/torch/distro
+- Install torch packages `nngraph` and `display`
+```bash
+luarocks install nngraph
+luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec
+```
+- Clone this repo:
+```bash
+git clone git@github.com:phillipi/pix2pix.git
+cd pix2pix
+```
+
 #### To train the baseline model for synthetic domain.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python train.py \
