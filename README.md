@@ -50,12 +50,12 @@ imgs/000000003.png A
 * `--saved_model`: path to a pretrained model.
 
 ## Get started
-- Install torch and dependencies from https://github.com/torch/distro
-- Install torch packages `nngraph` and `display`
-```bash
-luarocks install nngraph
-luarocks install https://raw.githubusercontent.com/szym/display/master/display-scm-0.rockspec
-```
+- Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
+  - For pip users, please type the command `pip install -r requirements.txt`.
+  - For Conda users, you can create a new Conda environment using `conda env create -f environment.yml`.
+  - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
+  - For Repl users, please click [![Run on Repl.it](https://repl.it/badge/github/junyanz/pytorch-CycleGAN-and-pix2pix)](https://repl.it/github/junyanz/pytorch-CycleGAN-and-pix2pix).
+  
 - Clone this repo:
 ```bash
 git clone https://github.com/bupt-ai-cz/Meta-SelfLearning.git
