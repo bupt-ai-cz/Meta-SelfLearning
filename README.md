@@ -48,7 +48,6 @@ imgs/000000003.png A
 * `--SequenceModeling`: select SequenceModeling module [None | BiLSTM], in our method, we use BiLSTM only.
 * `--Prediction`: select Prediction module [CTC | Attn], in our method, we use Attn only.
 * `--saved_model`: path to a pretrained model.
-* 
 
 ## Get started
 - Install torch and dependencies from https://github.com/torch/distro
