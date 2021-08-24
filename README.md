@@ -59,8 +59,8 @@ luarocks install https://raw.githubusercontent.com/szym/display/master/display-s
 ```
 - Clone this repo:
 ```bash
-git clone git@github.com:phillipi/pix2pix.git
-cd pix2pix
+git clone https://github.com/bupt-ai-cz/Meta-SelfLearning.git
+cd Meta-SelfLearning
 ```
 
 #### To train the baseline model for synthetic domain.
