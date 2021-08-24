@@ -6,7 +6,7 @@ Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark
 
 
 ## Data Prepare
-- Download the dataset at [Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
+Download the dataset at [Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
 
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
