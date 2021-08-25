@@ -1,12 +1,16 @@
-## Meta-SelfLearning
-Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark
+# Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark
 
-[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://)
+[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840)
 
+![dataset1](imgs/dataset1.png)
 
+## Abstract
+
+In recent years, deep learning-based methods have shown promising results in computer vision area. However, a common deep learning model requires a large amount of labeled data, which is labor-intensive to collect and label. What’s more, the model can be ruined due to the domain shift between training data and testing data. Text recognition is a broadly studied field in computer vision and suffers from the same problems noted above due to the diversity of fonts and complicated backgrounds. In this paper, we focus on the text recognition problem and mainly make three contributions toward these problems. First, we collect a multi-source domain adaptation dataset for text recognition, including five different domains with over five million images, which is the first multi-domain text recognition dataset to our best knowledge. Secondly, we propose a new method called Meta Self-Learning, which combines the self-learning method with the meta-learning paradigm and achieves a better recognition result under the scene of multi domain adaptation. Thirdly, extensive experiments are conducted on the dataset to provide a benchmark and also show the effectiveness of our method. 
 
 ## Data Prepare
-Download the dataset at [DATA](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
+
+Download the dataset from [here](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
 
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
@@ -24,6 +28,7 @@ data
 ```
 The format of train_label.txt should be `{imagepath}\t{label}\n`
 For example,
+
 ```
 imgs/000000001.png Tiredness
 imgs/000000002.png kills
@@ -117,10 +122,17 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_self_learning.py
     --saved_model pretrained_model/pretrained.pth 
 ```
 ## Citation
-If you use this data for your research, please cite our paper <a href="https">Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark</a>:
+If you use this data for your research, please cite our paper [Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark](https://arxiv.org/abs/2108.10840)
 
 ```
-
+@misc{qiu2021meta,
+      title={Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark}, 
+      author={Shuhao Qiu and Chuang Zhu and Wenli Zhou},
+      year={2021},
+      eprint={2108.10840},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## License
