@@ -140,7 +140,7 @@ This Dataset is made freely available to academic and non-academic entities for 
 2. That you may not use the dataset or any derivative work for commercial purposes as, for example, licensing or selling the data, or using the data with a purpose to procure a commercial gain.
 
 ## Privacy
-Most of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us by sending an e-mail to bupt.ai.cz@gmail.com.
+Most of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
 
 ## Contact
 * email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
