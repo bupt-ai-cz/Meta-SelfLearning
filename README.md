@@ -140,7 +140,7 @@ This Dataset is made freely available to academic and non-academic entities for 
 2. That you may not use the dataset or any derivative work for commercial purposes as, for example, licensing or selling the data, or using the data with a purpose to procure a commercial gain.
 
 ## Privacy
-Most of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
+Part of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. Part of the data is newly generated. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
 
 ## Contact
 * email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
@@ -150,3 +150,9 @@ Most of the data is constructed based on the processing of existing databases. P
 * [Synthetic data and artificial neural networks for natural scene text recognition]()
 * [Icdar 2015 competition on robust reading]()
 * [Icdar 2013 robust reading competition]()
+* [Casia online and offline chinese handwriting databases]()
+* [Icdar2019 robust reading challenge on multi-lingual scene text detection and recognition—rrc-mlt-2019]()
+* [Icdar2017 robust reading challenge on multi-lingual scene text detection and script identification-rrc-mlt]()
+* [A robust arbitrary text detection system for natural scene images]()
+* [End-to-end scene text recognition]()
+* [ Towards end-to-end license plate detection and recognition: A large dataset and baseline]()
