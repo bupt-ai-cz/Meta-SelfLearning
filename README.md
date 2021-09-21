@@ -144,3 +144,9 @@ Most of the data is constructed based on the processing of existing databases. P
 
 ## Contact
 * email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
+
+## Reference
+* https://github.com/YCG09/chinese_ocr
+* [Synthetic data and artificial neural networks for natural scene text recognition]()
+* [Icdar 2015 competition on robust reading]()
+* [Icdar 2013 robust reading competition]()
