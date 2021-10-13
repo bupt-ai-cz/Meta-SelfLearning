@@ -1,6 +1,6 @@
 # Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark
 
-[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840) | [Benchmarks](https://paperswithcode.com/paper/meta-self-learning-for-multi-source-domain) | [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Codes%20and%20Data%20for%20Our%20Paper:%20"Meta%20Self-Learning%20for%20Multi-Source%20Domain%20Adaptation:%20A%20Benchmark"%20&url=https://github.com/bupt-ai-cz/Meta-SelfLearning)
+[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840) | [Benchmarks](https://paperswithcode.com/paper/meta-self-learning-for-multi-source-domain) | [YouTube](https://youtu.be/NaakbL4tPJw) | [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Codes%20and%20Data%20for%20Our%20Paper:%20"Meta%20Self-Learning%20for%20Multi-Source%20Domain%20Adaptation:%20A%20Benchmark"%20&url=https://github.com/bupt-ai-cz/Meta-SelfLearning)
 
 ![dataset1](imgs/dataset1.png)
 
