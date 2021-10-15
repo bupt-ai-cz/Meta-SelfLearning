@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
-from .senet.se_resnet import se_resnet50_wfc
-from .senet.se_module import SELayer
+# from .senet.se_resnet import se_resnet50_wfc
+# from .senet.se_module import SELayer
 
 class VGG_FeatureExtractor(nn.Module):
     """ FeatureExtractor of CRNN (https://arxiv.org/pdf/1507.05717.pdf) """
