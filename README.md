@@ -53,13 +53,9 @@ imgs/000000003.png A
 * `--SequenceModeling`: select SequenceModeling module [None | BiLSTM], in our method, we use BiLSTM only.
 * `--Prediction`: select Prediction module [CTC | Attn], in our method, we use Attn only.
 * `--saved_model`: path to a pretrained model.
-<<<<<<< HEAD
 * `--valInterval`: iteration interval for validation.
 * `--inner_loop`: update steps in the meta update, default is 1.
 * `--source_num`: number of source domains, default is 4.
-* ``:
-=======
->>>>>>> db70c35e64ccc8b7aad8f67ac513cde52b0d4f6f
 
 ## Get started
 - Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
