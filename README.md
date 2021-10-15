@@ -39,8 +39,10 @@ imgs/000000003.png A
 * `--SequenceModeling`: select SequenceModeling module [None | BiLSTM], in our method, we use BiLSTM only.
 * `--Prediction`: select Prediction module [CTC | Attn], in our method, we use Attn only.
 * `--saved_model`: path to a pretrained model.
-* 
-
+* `--valInterval`: iteration interval for validation.
+* `--inner_loop`: update steps in the meta update, default is 1.
+* `--source_num`: number of source domains, default is 4.
+* ``:
 
 ## Get started
 #### To train the baseline model for synthetic domain.
@@ -65,7 +67,7 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_train.py
     --Transformation None --FeatureExtraction ResNet \
     --SequenceModeling BiLSTM --Prediction Attn \
     --batch_size 96  --source_num 4  \
-    --valInterval 5000 --inner_loop 1 --valInterval 5000 \
+    --valInterval 5000 --inner_loop 1\
     --saved_model saved_models/pretrained.pth 
 ```
 
