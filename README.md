@@ -1,7 +1,17 @@
-## Meta-SelfLearning
-Meta Self-learning for Multi-Source Domain Adaptation： A Benchmark
+# Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark
+
+[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840) | [Benchmarks](https://paperswithcode.com/paper/meta-self-learning-for-multi-source-domain) | [YouTube](https://youtu.be/NaakbL4tPJw) | [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Codes%20and%20Data%20for%20Our%20Paper:%20"Meta%20Self-Learning%20for%20Multi-Source%20Domain%20Adaptation:%20A%20Benchmark"%20&url=https://github.com/bupt-ai-cz/Meta-SelfLearning)
+
+![dataset1](imgs/dataset1.png)
+
+## Abstract
+
+In recent years, deep learning-based methods have shown promising results in computer vision area. However, a common deep learning model requires a large amount of labeled data, which is labor-intensive to collect and label. What’s more, the model can be ruined due to the domain shift between training data and testing data. Text recognition is a broadly studied field in computer vision and suffers from the same problems noted above due to the diversity of fonts and complicated backgrounds. In this paper, we focus on the text recognition problem and mainly make three contributions toward these problems. First, we collect a multi-source domain adaptation dataset for text recognition, including five different domains with over five million images, which is the first multi-domain text recognition dataset to our best knowledge. Secondly, we propose a new method called Meta Self-Learning, which combines the self-learning method with the meta-learning paradigm and achieves a better recognition result under the scene of multi domain adaptation. Thirdly, extensive experiments are conducted on the dataset to provide a benchmark and also show the effectiveness of our method. 
 
 ## Data Prepare
+
+Download the dataset from [here](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
+
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
 python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
@@ -18,6 +28,7 @@ data
 ```
 The format of train_label.txt should be `{imagepath}\t{label}\n`
 For example,
+
 ```
 imgs/000000001.png Tiredness
 imgs/000000002.png kills
@@ -29,6 +40,9 @@ imgs/000000003.png A
 * Pytorch == 1.7.0
 * torchvision == 0.8.1
 
+- Linux or OSX
+- NVIDIA GPU + CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
+
 ## Argument
 * `--train_data`: folder path to training lmdb dataset.
 * `--valid_data`: folder path to validation lmdb dataset.
@@ -39,12 +53,25 @@ imgs/000000003.png A
 * `--SequenceModeling`: select SequenceModeling module [None | BiLSTM], in our method, we use BiLSTM only.
 * `--Prediction`: select Prediction module [CTC | Attn], in our method, we use Attn only.
 * `--saved_model`: path to a pretrained model.
+<<<<<<< HEAD
 * `--valInterval`: iteration interval for validation.
 * `--inner_loop`: update steps in the meta update, default is 1.
 * `--source_num`: number of source domains, default is 4.
 * ``:
+=======
+>>>>>>> db70c35e64ccc8b7aad8f67ac513cde52b0d4f6f
 
 ## Get started
+- Install [PyTorch](http://pytorch.org) and 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
+  - For pip users, please type the command `pip install -r requirements.txt`.
+  - For Conda users, you can create a new Conda environment using `conda env create -f environment.yml`.
+  
+- Clone this repo:
+```bash
+git clone https://github.com/bupt-ai-cz/Meta-SelfLearning.git
+cd Meta-SelfLearning
+```
+
 #### To train the baseline model for synthetic domain.
 ```
 OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python train.py \
@@ -101,5 +128,38 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_self_learning.py
     --pseudo_dataset_num 50000 --valInterval 5000 --inner_loop 1 \
     --saved_model pretrained_model/pretrained.pth 
 ```
+## Citation
+If you use this data for your research, please cite our paper [Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark](https://arxiv.org/abs/2108.10840)
+
+```
+@article{qiu2021meta,
+  title={Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark},
+  author={Qiu, Shuhao and Zhu, Chuang and Zhou, Wenli},
+  journal={arXiv preprint arXiv:2108.10840},
+  year={2021}
+}
+```
+
+## License
+This Dataset is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications, or personal experimentation. Permission is granted to use the data given that you agree to our license terms bellow:
+
+1. That you include a reference to our Dataset in any work that makes use of the dataset. For research papers, cite our preferred publication as listed on our website; for other media cite our preferred publication as listed on our website or link to the our website.
+2. That you may not use the dataset or any derivative work for commercial purposes as, for example, licensing or selling the data, or using the data with a purpose to procure a commercial gain.
+
+## Privacy
+Part of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. Part of the data is newly generated. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
+
 ## Contact
 * email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
+
+## Reference
+* https://github.com/YCG09/chinese_ocr
+* [Synthetic data and artificial neural networks for natural scene text recognition]()
+* [Icdar 2015 competition on robust reading]()
+* [Icdar 2013 robust reading competition]()
+* [Casia online and offline chinese handwriting databases]()
+* [Icdar2019 robust reading challenge on multi-lingual scene text detection and recognition—rrc-mlt-2019]()
+* [Icdar2017 robust reading challenge on multi-lingual scene text detection and script identification-rrc-mlt]()
+* [A robust arbitrary text detection system for natural scene images]()
+* [End-to-end scene text recognition]()
+* [ Towards end-to-end license plate detection and recognition: A large dataset and baseline]()
