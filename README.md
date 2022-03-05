@@ -1,9 +1,9 @@
 # Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Codes%20and%20Data%20for%20Our%20Paper:%20"Meta%20Self-Learning%20for%20Multi-Source%20Domain%20Adaptation:%20A%20Benchmark"%20&url=https://github.com/bupt-ai-cz/Meta-SelfLearning)
 
+[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840) | [YouTube](https://youtu.be/NaakbL4tPJw) | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/meta-self-learning-for-multi-source-domain/scene-text-recognition-on-msda)](https://paperswithcode.com/sota/scene-text-recognition-on-msda?p=meta-self-learning-for-multi-source-domain) | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/meta-self-learning-for-multi-source-domain/domain-adaptation-on-msda)](https://paperswithcode.com/sota/domain-adaptation-on-msda?p=meta-self-learning-for-multi-source-domain)
+
 ## News
 - ⚡(2022-3-5): We released pre-trained models. Download from[百度云-BaiDuYun](https://pan.baidu.com/s/1sKMzdx20IbKdM1wgyEVrzA) with Fetch code: 7cwt 
-
-[Project](https://bupt-ai-cz.github.io/Meta-SelfLearning/) | [Arxiv](https://arxiv.org/abs/2108.10840) | [YouTube](https://youtu.be/NaakbL4tPJw) | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/meta-self-learning-for-multi-source-domain/scene-text-recognition-on-msda)](https://paperswithcode.com/sota/scene-text-recognition-on-msda?p=meta-self-learning-for-multi-source-domain) | [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/meta-self-learning-for-multi-source-domain/domain-adaptation-on-msda)](https://paperswithcode.com/sota/domain-adaptation-on-msda?p=meta-self-learning-for-multi-source-domain)
 
 ![dataset1](imgs/dataset1.png)
 
