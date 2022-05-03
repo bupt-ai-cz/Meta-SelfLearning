@@ -144,8 +144,8 @@ If you use this data for your research, please cite our paper [Meta Self-Learnin
 ## License
 This Dataset is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications, or personal experimentation. Permission is granted to use the data given that you agree to our license terms bellow:
 
-1. That you include a reference to our Dataset in any work that makes use of the dataset. For research papers, cite our preferred publication as listed on our website; for other media cite our preferred publication as listed on our website or link to the our website.
-2. That you may not use the dataset or any derivative work for commercial purposes as, for example, licensing or selling the data, or using the data with a purpose to procure a commercial gain.
+1. That you include a reference to our paper in any work that makes use of the dataset. 
+2. That you may not use the dataset or any derivative work for commercial purposes.
 
 ## Privacy
 Part of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. Part of the data is newly generated. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
