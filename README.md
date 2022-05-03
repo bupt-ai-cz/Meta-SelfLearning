@@ -133,10 +133,11 @@ OMP_NUM_THREADS=8 CUDA_VISIBLE_DEVICES=0 python meta_self_learning.py
 If you use this data for your research, please cite our paper [Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark](https://arxiv.org/abs/2108.10840)
 
 ```
-@article{qiu2021meta,
+@inproceedings{qiu2021meta,
   title={Meta Self-Learning for Multi-Source Domain Adaptation: A Benchmark},
   author={Qiu, Shuhao and Zhu, Chuang and Zhou, Wenli},
-  journal={arXiv preprint arXiv:2108.10840},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={1592--1601},
   year={2021}
 }
 ```
