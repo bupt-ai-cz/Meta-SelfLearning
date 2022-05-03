@@ -156,7 +156,7 @@ Part of the data is constructed based on the processing of existing databases. P
 
 ## Reference
 * https://github.com/YCG09/chinese_ocr
-* [Synthetic data and artificial neural networks for natural scene text recognition]()
+* [Synthetic data and artificial neural networks for natural scene text recognition](https://arxiv.org/abs/1406.2227)
 * [Icdar 2015 competition on robust reading]()
 * [Icdar 2013 robust reading competition]()
 * [Casia online and offline chinese handwriting databases]()
