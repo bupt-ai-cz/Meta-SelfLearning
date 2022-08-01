@@ -152,7 +152,7 @@ This Dataset is made freely available to academic and non-academic entities for 
 Part of the data is constructed based on the processing of existing databases. Part of the data is crawled online or captured by ourselves. Part of the data is newly generated. We prohibit you from using the Datasets in any manner to identify or invade the privacy of any person. If you have any privacy concerns, including to remove your information from the Dataset, please contact us.
 
 ## Contact
-* email: qiushuhao@bupt.edu.cn; czhu@bupt.edu.cn
+* email: czhu@bupt.edu.cn; qiushuhao@bupt.edu.cn
 
 ## Reference
 * https://github.com/YCG09/chinese_ocr
