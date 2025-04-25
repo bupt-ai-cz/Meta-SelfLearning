@@ -15,7 +15,7 @@ In recent years, deep learning-based methods have shown promising results in com
 
 ## Data Prepare
 
-Download the dataset from [here](https://bupt-ai-cz.github.io/Meta-SelfLearning/).
+Download the dataset from [here](https://github.com/bupt-ai-cz/Meta-SelfLearning/issues/5).
 
 Before using the raw data, you need to convert it to lmdb dataset.
 ```
